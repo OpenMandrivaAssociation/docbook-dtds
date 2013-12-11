@@ -13,29 +13,23 @@ Summary: SGML and XML document type definitions for DocBook
 License: Copyright only
 URL: http://www.oasis-open.org/docbook/
 
-Obsoletes: docbook-dtd30-sgml < %{version}-%{release}
-Obsoletes: docbook-dtd31-sgml < %{version}-%{release}
-Obsoletes: docbook-dtd40-sgml < %{version}-%{release}
-Obsoletes: docbook-dtd41-sgml < %{version}-%{release}
-Obsoletes: docbook-dtd412-xml < %{version}-%{release}
-Provides: docbook-dtd-xml = %{version}-%{release}
-Provides: docbook-dtd-sgml = %{version}-%{release}
-Provides: docbook-dtd30-sgml = %{version}-%{release}
-Provides: docbook-dtd31-sgml = %{version}-%{release}
-Provides: docbook-dtd40-sgml = %{version}-%{release}
-Provides: docbook-dtd41-sgml = %{version}-%{release}
-Provides: docbook-dtd412-xml = %{version}-%{release}
-Provides: docbook-dtd42-sgml = %{version}-%{release}
-Provides: docbook-dtd42-xml = %{version}-%{release}
-Provides: docbook-dtd43-sgml = %{version}-%{release}
-Provides: docbook-dtd43-xml = %{version}-%{release}
-Provides: docbook-dtd44-sgml = %{version}-%{release}
-Provides: docbook-dtd44-xml = %{version}-%{release}
-Provides: docbook-dtd45-sgml = %{version}-%{release}
-Provides: docbook-dtd45-xml = %{version}-%{release}
+%rename docbook-dtd-sgml
+%rename docbook-dtd-xml
+%rename docbook-dtd30-sgml
+%rename docbook-dtd31-sgml
+%rename docbook-dtd40-sgml
+%rename docbook-dtd41-sgml
+%rename docbook-dtd412-xml
+%rename docbook-dtd42-xml
+%rename docbook-dtd43-sgml
+%rename docbook-dtd43-xml
+%rename docbook-dtd44-sgml
+%rename docbook-dtd44-xml
+%rename docbook-dtd45-sgml
+%rename docbook-dtd45-xml
 
-Requires(post): /usr/bin/xmlcatalog
-Requires(postun): /usr/bin/xmlcatalog
+Requires(post): libxml2-utils
+Requires(postun): libxml2-utils
 Requires(post): /bin/chmod
 Requires(post): sed
 Requires(postun): sed
@@ -238,7 +232,7 @@ rm -rf $RPM_BUILD_ROOT
 # Symlinks
 mkdir -p $RPM_BUILD_ROOT/etc/sgml
 for fmt in sgml xml; do
-  ln -s $fmt-docbook-4.5.cat \
+  ln -s $fmt-docbook-4.5-$fmt.cat \
      $RPM_BUILD_ROOT/etc/sgml/$fmt-docbook.cat
 done
 
