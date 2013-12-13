@@ -5,7 +5,7 @@
 
 Name: docbook-dtds
 Version: 1.0
-Release: 62%{?dist}
+Release: 63%{?dist}
 
 
 Summary: SGML and XML document type definitions for DocBook
@@ -30,7 +30,7 @@ URL: http://www.oasis-open.org/docbook/
 
 Requires(post): libxml2-utils
 Requires(postun): libxml2-utils
-Requires(post): /bin/chmod
+Requires(post): coreutils
 Requires(post): sed
 Requires(postun): sed
 Requires: sgml-common
