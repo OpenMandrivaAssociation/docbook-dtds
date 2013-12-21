@@ -18,7 +18,6 @@ Requires:	docbook-dtd44-xml
 Requires:	docbook-dtd45-xml
 Requires:	docbook-style-dsssl
 Requires:	docbook-style-xsl
-Requires:	docbook-style-xsl-ns
 Requires:	docbook-to-man
 Requires:	docbook-utils
 Requires:	docbook-utils-pdf
