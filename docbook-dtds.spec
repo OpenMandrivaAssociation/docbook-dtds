@@ -1,13 +1,12 @@
 Name: docbook-dtds
 Version: 1.0
-Release: 63.0%{?dist}
+Release: 63.1%{?dist}
 
 Summary: SGML and XML document type definitions for DocBook
 
 License: Copyright only
 URL: http://www.oasis-open.org/docbook/
 
-Requires:	docbook-dtd-mathml20
 Requires:	docbook-dtd30-sgml
 Requires:	docbook-dtd31-sgml
 Requires:	docbook-dtd41-sgml
@@ -17,9 +16,7 @@ Requires:	docbook-dtd42-xml
 Requires:	docbook-dtd43-xml
 Requires:	docbook-dtd44-xml
 Requires:	docbook-dtd45-xml
-Requires:	docbook-dtds
 Requires:	docbook-style-dsssl
-Requires:	docbook-style-dsssl-doc
 Requires:	docbook-style-xsl
 Requires:	docbook-style-xsl-ns
 Requires:	docbook-to-man
