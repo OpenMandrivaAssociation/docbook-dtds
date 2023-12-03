@@ -1,5 +1,5 @@
 Name: docbook-dtds
-Version: 1.0
+Version: 4.5
 Release: 63.5
 
 Summary: SGML and XML document type definitions for DocBook
