@@ -5,7 +5,7 @@ Release: 63.5
 Summary: SGML and XML document type definitions for DocBook
 
 License: Copyright only
-URL: http://www.oasis-open.org/docbook/
+URL: https://www.oasis-open.org/docbook/
 
 Requires:	docbook-dtd30-sgml
 Requires:	docbook-dtd31-sgml
